@@ -1,0 +1,24 @@
+{
+  "name": "writingsupplies",
+  "version": "1.0.0",
+  "description": "یک قالب حرفه‌ای برای فروشگاه‌های لوازم‌التحریر، ساخته‌شده بر پایه **Astra (نسخه رایگان)** با پشتیبانی کامل از **WooCommerce** و **Advanced Custom Fields (ACF)**.  \r این قالب دارای یک سیستم اختصاصی برای **ایمپورت محصولات** از سایت‌ها یا فایل‌های اکسل است و کاملاً بدون نیاز به نسخه‌های پرو کار می‌کند.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samanbalahang/katibehTahrir.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samanbalahang/katibehTahrir/issues"
+  },
+  "homepage": "https://github.com/samanbalahang/katibehTahrir#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
