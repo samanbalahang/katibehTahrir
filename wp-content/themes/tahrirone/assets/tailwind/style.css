@@ -1,43 +1,53 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'tahrir';
-  src: url('fonts/YekanBakh-Light.woff') format('woff');
-  font-weight: 300; /* Light */
-  font-style: normal;
-  font-display: swap; /* <--- This is the key addition */
+    font-family: 'tahrir';
+    src: url('fonts/YekanBakh-Light.woff') format('woff');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+    font-display: swap;
+    /* <--- This is the key addition */
 }
 
 @font-face {
-  font-family: 'tahrir';
-  src: url('fonts/YekanBakh-Regular.woff') format('woff');
-  font-weight: 400; /* Regular */
-  font-style: normal;
-  font-display: swap; /* <--- This is the key addition */
+    font-family: 'tahrir';
+    src: url('fonts/YekanBakh-Regular.woff') format('woff');
+    font-weight: 400;
+    /* Regular */
+    font-style: normal;
+    font-display: swap;
+    /* <--- This is the key addition */
 }
 
 @font-face {
-  font-family: 'tahrir';
-  src: url('fonts/YekanBakh-SemiBold.woff') format('woff');
-  font-weight: 600; /* SemiBold */
-  font-style: normal;
-  font-display: swap; /* <--- This is the key addition */
+    font-family: 'tahrir';
+    src: url('fonts/YekanBakh-SemiBold.woff') format('woff');
+    font-weight: 600;
+    /* SemiBold */
+    font-style: normal;
+    font-display: swap;
+    /* <--- This is the key addition */
 }
 
 @font-face {
-  font-family: 'tahrir';
-  src: url('fonts/YekanBakh-Bold.woff') format('woff');
-  font-weight: 700; /* Bold */
-  font-style: normal;
-  font-display: swap; /* <--- This is the key addition */
+    font-family: 'tahrir';
+    src: url('fonts/YekanBakh-Bold.woff') format('woff');
+    font-weight: 700;
+    /* Bold */
+    font-style: normal;
+    font-display: swap;
+    /* <--- This is the key addition */
 }
 
 @font-face {
-  font-family: 'tahrir';
-  src: url('fonts/YekanBakh-ExtraBold.woff') format('woff');
-  font-weight: 800; /* ExtraBold */
-  font-style: normal;
-  font-display: swap; /* <--- This is the key addition */
+    font-family: 'tahrir';
+    src: url('fonts/YekanBakh-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    /* ExtraBold */
+    font-style: normal;
+    font-display: swap;
+    /* <--- This is the key addition */
 }
 
 @theme {
@@ -46,7 +56,7 @@
     --color-darkprim: #34c5a2;
     --color-third: #ececec;
     --color-shegeft: #d3e2de;
-    --dark-menu :#253c30;
+    --dark-menu: #253c30;
     --font-tahrir: "pinar";
 }
 
@@ -57,9 +67,11 @@ body {
     position: relative;
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
+
 .swiper {
     width: 100%;
     height: 100%;
@@ -284,26 +296,31 @@ a{
     background-color: black !important;
     width: 0.51rem;
 }
+
 /* menu */
 .wp-menu-contianer .sub-menu {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out; 
-    padding-top: 0; 
+    transition: max-height 0.4s ease-out;
+    padding-top: 0;
     padding-bottom: 0;
-    margin-top: 0; 
+    margin-top: 0;
     margin-bottom: 0;
 }
-.wp-menu-contianer li{
+
+.wp-menu-contianer li {
     line-height: 3rem;
 }
-.wp-menu-contianer>ul>li{
+
+.wp-menu-contianer>ul>li {
     border-bottom: 1px solid #5d5d5d;
 }
-.wp-menu-contianer li.menu-item-has-children.active{
+
+.wp-menu-contianer li.menu-item-has-children.active {
     position: static;
 }
-li.menu-item-has-children.active>.sub-menu{
+
+li.menu-item-has-children.active>.sub-menu {
     position: absolute !important;
     width: 100% !important;
     height: 100% !important;
@@ -317,15 +334,135 @@ li.menu-item-has-children.active>.sub-menu{
 }
 
 .wp-menu-contianer ul li.menu-item-has-children {
-    position: relative; /* You likely don't need 'relative' anymore */
+    position: relative;
+    /* You likely don't need 'relative' anymore */
 }
-ul.page-numbers{
+
+/* --- Pagination (from user input) --- */
+ul.page-numbers {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
 }
+
+/* --- Product Summary Title (from user input) --- */
+.summary.entry-summary h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* --- Accordion Styles (from user input) --- */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.accordion-header {
+    background-color: #f7f7f7;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for the active/open header */
+.accordion-header.active,
+.accordion-header:hover {
+    background-color: #eee;
+}
+
+.accordion-content {
+    padding: 0 18px;
+    /* Key for hiding content */
+    max-height: 0;
+    overflow: hidden;
+    /* Key for smooth animation */
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content p {
+    padding-bottom: 18px;
+    margin: 0;
+}
+
+/* --- Comment Form Cleanup (from user input) --- */
+.comment-form p {
+    margin-bottom: 15px;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.comment-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Style the submit button */
+.comment-form #submit {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form #submit:hover {
+    background-color: #005177;
+}
+
+/* star */
+.stars span[role="group"] {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+}
+
+.stars span[role="group"] a::after {
+    content: "★";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    pointer-events: none;
+    cursor: pointer;
+    padding: 0 0.1em;
+    font-size: 2rem;
+}
+
+.stars span[role="group"] a {
+    position: relative !important;
+    color: transparent;
+    /* left: -9999px !important; */
+}
+
+.stars span[role="group"] a:after {
+    color: rgb(160, 160, 160);
+}
+
+.stars span[role="group"] a:hover::after {
+    color: #e98f18;
+}
+
 @media (min-width:768px) {
 
     .wp-menu-contianer ul {

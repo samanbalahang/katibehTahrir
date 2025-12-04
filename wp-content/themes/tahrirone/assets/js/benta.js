@@ -291,5 +291,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // The line 'arrowBox.remove();' was trying to remove a local variable from showmenu globally and is now fixed by the loop above.
     }
-
+    const headers = document.querySelectorAll('.accordion-header');
+    if (headers) {
+        headers.forEach(header => {
+            header.addEventListener('click', function () {
+                // Get the content element immediately following the header
+                const content = this.nextElementSibling;
+                // Toggle the 'active' class on the header
+                this.classList.toggle('active');
+                // Check the current state of the content
+                if (content.style.maxHeight) {
+                    // If max-height is set (i.e., open), close it
+                    content.style.maxHeight = null;
+                } else {
+                    // If it's closed, open it by setting max-height to its scrollHeight
+                    // scrollHeight is the minimum height required to fit all content.
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    }
 });
