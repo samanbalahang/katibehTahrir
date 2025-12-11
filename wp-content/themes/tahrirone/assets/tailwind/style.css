@@ -57,9 +57,27 @@
     --color-third: #ececec;
     --color-shegeft: #d3e2de;
     --dark-menu: #253c30;
-    --font-tahrir: "pinar";
+    --font-tahrir: "tahrir";
+}
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-darkprim);
+}
 /* swiper */
 html,
 body {
@@ -163,6 +181,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .slider-addtocard .slider-social {
@@ -204,18 +223,19 @@ a {
 .slider-addtocard:hover .addtocard-button span {
     width: 0;
     opacity: 0;
-
+    display: none;
 }
 
 .slider-addtocard:hover .addtocard-button {
     background-color: var(--color-darkprim);
     color: #fff;
-    width: 56px;
-    height: 55px;
+    width: 15px;
+    height: 39px;
     display: flex;
     align-items: center;
     margin-top: 8px;
     margin-bottom: 8px;
+    justify-content: center;
 }
 
 .slider-addtocard:hover .addtocard-button svg {
@@ -462,7 +482,15 @@ ul.page-numbers {
 .stars span[role="group"] a:hover::after {
     color: #e98f18;
 }
-
+h1.product_title.entry-title{
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 3rem;
+}
+.woocommerce-Price-currencySymbol{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 @media (min-width:768px) {
 
     .wp-menu-contianer ul {
@@ -548,13 +576,17 @@ ul.page-numbers {
         min-width: 200px;
         z-index: 3;
     }
+    .wp-menu-contianer>ul>li:last-child>ul {
+        right: auto;
+        left: 0;
+    }
 
     .wp-menu-contianer>ul>li:hover>ul {
         max-height: 300px;
         /* Needs to be larger than the total height of sub-items */
         opacity: 1;
         padding: 1rem;
-        overflow: visible;
+        overflow-y: auto;
     }
 
     .wp-menu-contianer>ul>li ul li {
@@ -619,6 +651,10 @@ ul.page-numbers {
         background-color: #333;
         min-width: 200px;
         z-index: 3;
+    }
+    .wp-menu-contianer>ul>li:last-child ul li ul {
+        left: 100%;
+        right: auto;
     }
 
     .wp-menu-contianer>ul>li ul li:hover ul {

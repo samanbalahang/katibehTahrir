@@ -1,119 +1,34 @@
-    <footer class="w-full border-t border-t-black pt-18">
-        <div class="container mx-auto">
-            <div class="flex flex-wrap">
-                <ul class="w-full md:w-1/5">
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                </ul>
-                <ul class="w-full md:w-1/5">
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                </ul>
-                <ul class="w-full md:w-1/5">
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                </ul>
-                <ul class="w-full md:w-1/5">
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                    <li><a href="#">لینکهای مفید</a></li>
-                </ul>
-                <div class="w-full md:w-1/5">
-                    <a href="#">
-                        <img src="images/banta-mod.png" alt="benta" class="w-full">
-                    </a>
-                    <a href="#"
-                        class="w-90/100 rounded-full border-3 border-primary text-center text-darkprim flex justify-center hover:bg-darkprim hover:text-primary group px-4 py-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            class="fill-darkprim group-hover:fill-primary" fill="#1f1f1f">
-                            <path
-                                d="M480-342 356-466l20-20 90 90v-352h28v352l90-90 20 20-124 124ZM272-212q-26 0-43-17t-17-43v-90h28v90q0 12 10 22t22 10h416q12 0 22-10t10-22v-90h28v90q0 26-17 43t-43 17H272Z" />
-                        </svg>
-                        دانلود اپلیکیشن
-                    </a>
-                    <div class="flex w-full h-10 items-center my-8">
-                        <a href="#" class="h-full block w-1/4">
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="h-full w-auto stroke-black">
-                                <style>
-                                    .s0 {
-                                        fill: none;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                        stroke-width: 20
-                                    }
-                                </style>
-                                <path class="s0"
-                                    d="m421.49 163.52c-1.5-35.89-8.77-67.68-32.08-93.87-23.22-26.19-51.4-34.39-83.22-36.19-32.8-2.1-131.08-2.1-163.88 0-31.73 1.7-59.91 9.9-83.22 36.09-23.31 26.19-30.49 57.98-32.08 93.87-1.86 36.99-1.86 147.87 0 184.86 1.5 35.89 8.77 67.68 32.08 93.87 23.31 26.19 51.4 34.39 83.22 36.19 32.8 2.1 131.08 2.1 163.88 0 31.82-1.7 60-9.9 83.22-36.19 23.22-26.19 30.49-57.98 32.08-93.87 1.86-36.99 1.86-147.77 0-184.76zm-114.95-27.19c0-7.1 2.5-13.92 6.96-18.94 4.45-5.03 10.49-7.85 16.79-7.85 6.3 0 12.35 2.82 16.8 7.85 4.45 5.02 6.96 11.84 6.96 18.94 0 7.11-2.51 13.92-6.96 18.95-4.45 5.02-10.5 7.84-16.8 7.84-6.3 0-12.34-2.82-16.79-7.84-4.46-5.03-6.96-11.84-6.96-18.95zm-82.25 4.7c-27.03-0.08-52.98 11.96-72.14 33.46-19.17 21.51-29.97 50.72-30.04 81.21-0.07 30.49 10.6 59.77 29.66 81.38 19.06 21.62 44.96 33.81 71.99 33.89 27.03 0.08 52.99-11.96 72.15-33.46 19.16-21.51 29.97-50.72 30.04-81.21 0.07-30.49-10.6-59.77-29.66-81.38-19.07-21.62-44.96-33.81-72-33.89z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="h-full block w-1/4">
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="h-full w-auto stroke-black">
-                                <style>
-                                    .s0 {
-                                        fill: none;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                        stroke-width: 20
-                                    }
-                                </style>
-                                <path class="s0"
-                                    d="m357.2 48h70.6l-154.2 176.2 181.4 239.8h-142l-111.3-145.4-127.2 145.4h-70.7l164.9-188.5-173.9-227.5h145.6l100.5 132.9zm-267.2 37.36l255 331.5" />
-                            </svg>
-                        </a>
-                        <a href="#" class="h-full block w-1/4">
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="h-full w-auto stroke-black">
-                                <style>
-                                    .s0 {
-                                        fill: none;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                        stroke-width: 20
-                                    }
-                                </style>
-                                <path class="s0"
-                                    d="m421.49 163.52c-1.5-35.89-8.77-67.68-32.08-93.87-23.22-26.19-51.4-34.39-83.22-36.19-32.8-2.1-131.08-2.1-163.88 0-31.73 1.7-59.91 9.9-83.22 36.09-23.31 26.19-30.49 57.98-32.08 93.87-1.86 36.99-1.86 147.87 0 184.86 1.5 35.89 8.77 67.68 32.08 93.87 23.31 26.19 51.4 34.39 83.22 36.19 32.8 2.1 131.08 2.1 163.88 0 31.82-1.7 60-9.9 83.22-36.19 23.22-26.19 30.49-57.98 32.08-93.87 1.86-36.99 1.86-147.77 0-184.76zm-114.95-27.19c0-7.1 2.5-13.92 6.96-18.94 4.45-5.03 10.49-7.85 16.79-7.85 6.3 0 12.35 2.82 16.8 7.85 4.45 5.02 6.96 11.84 6.96 18.94 0 7.11-2.51 13.92-6.96 18.95-4.45 5.02-10.5 7.84-16.8 7.84-6.3 0-12.34-2.82-16.79-7.84-4.46-5.03-6.96-11.84-6.96-18.95zm-82.25 4.7c-27.03-0.08-52.98 11.96-72.14 33.46-19.17 21.51-29.97 50.72-30.04 81.21-0.07 30.49 10.6 59.77 29.66 81.38 19.06 21.62 44.96 33.81 71.99 33.89 27.03 0.08 52.99-11.96 72.15-33.46 19.16-21.51 29.97-50.72 30.04-81.21 0.07-30.49-10.6-59.77-29.66-81.38-19.07-21.62-44.96-33.81-72-33.89z" />
-                            </svg>
-                        </a>
-                        <a href="#" class="h-full block w-1/4">
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-                                class="h-full w-auto stroke-black">
-                                <style>
-                                    .s0 {
-                                        fill: none;
-                                        stroke-linecap: round;
-                                        stroke-linejoin: round;
-                                        stroke-width: 20
-                                    }
-                                </style>
-                                <path class="s0"
-                                    d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM371 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2 .5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3 .6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7 .5 3.2 .6 6.5 .4 9.8z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <p>
-                        Copyright 2023 BantaTheme ©
-                    </p>
+    <footer id="colophon" class="py-10 w-full border-t border-t-black pt-18">
+
+        <div class="container mx-auto px-4">
+
+            <div class="footer-widgets grid grid-cols-1 gap-8 items-center">
+
+                <div class="
+                md:grid md:grid-cols-3  2xl:grid-cols-5  md:gap-6
+                grid grid-cols-1 gap-8 items-center
+            ">
+                    <?php for ($i = 1; $i <= 5; $i++) : ?>
+                        <?php if (is_active_sidebar("footer-$i")) : ?>
+                            <div class="footer-widget-area-<?php echo $i; ?> col-span-1">
+                                <?php dynamic_sidebar("footer-$i"); ?>
+                            </div>
+                        <?php endif; ?>
+                    <?php endfor; ?>
                 </div>
+
+             
+
+            </div>
+            <div class="site-info text-center mt-10 pt-6">
+                 <?php if (is_active_sidebar("footer-6")) : ?>
+                    <div class="footer-widget-area-6 w-full mt-6 border-t border-gray-700 pt-6">
+                        <?php dynamic_sidebar("footer-6"); ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
-        <span>
-            کلیه حقوق این سایت متعلق به قالب بانتا میباشد.
-        </span>
-    </footer>
+    </footer><?php wp_footer(); ?>
     <a href="#" class="fixed bottom-10 right-5 bg-darkprim z-5 border border-white shadow-xl hidden" id="up">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="fill-white"
             fill="#1f1f1f">

@@ -299,59 +299,81 @@ if (!function_exists('format_toman_price')) {
  */
 
 // Define the meta key used for storing view counts
-define( 'POST_VIEWS_META_KEY', 'post_views_count' );
+define('POST_VIEWS_META_KEY', 'post_views_count');
 
-if ( ! function_exists( 'set_post_views' ) ) {
-    /**
-     * Increments the post view count every time a single post is viewed.
-     * Fires on 'wp_head' to ensure it runs late and doesn't interfere with standard queries.
-     */
-    function set_post_views() {
-        // Only run on single posts (and not during API calls or in admin)
-        if ( is_single() && 'post' === get_post_type() ) {
-            $post_id = get_the_ID();
-            
-            // Fetch the current view count
-            $count = get_post_meta( $post_id, POST_VIEWS_META_KEY, true );
-            
-            // Check if the count is empty or not numeric, set to 0 initially
-            if ( $count === '' || ! is_numeric( $count ) ) {
-                $count = 0;
-            }
-            
-            // Increment the count by 1
-            $new_count = $count + 1;
-            
-            // Update the post meta field
-            update_post_meta( $post_id, POST_VIEWS_META_KEY, $new_count );
-        }
-    }
-    // Hook the function to the 'wp_head' action
-    add_action( 'wp_head', 'set_post_views' );
+if (! function_exists('set_post_views')) {
+	/**
+	 * Increments the post view count every time a single post is viewed.
+	 * Fires on 'wp_head' to ensure it runs late and doesn't interfere with standard queries.
+	 */
+	function set_post_views()
+	{
+		// Only run on single posts (and not during API calls or in admin)
+		if (is_single() && 'post' === get_post_type()) {
+			$post_id = get_the_ID();
+
+			// Fetch the current view count
+			$count = get_post_meta($post_id, POST_VIEWS_META_KEY, true);
+
+			// Check if the count is empty or not numeric, set to 0 initially
+			if ($count === '' || ! is_numeric($count)) {
+				$count = 0;
+			}
+
+			// Increment the count by 1
+			$new_count = $count + 1;
+
+			// Update the post meta field
+			update_post_meta($post_id, POST_VIEWS_META_KEY, $new_count);
+		}
+	}
+	// Hook the function to the 'wp_head' action
+	add_action('wp_head', 'set_post_views');
 }
 
-if ( ! function_exists( 'get_post_views' ) ) {
-    /**
-     * Retrieves the view count for a given post ID.
-     *
-     * @param int $post_id The ID of the post to check.
-     * @return string The formatted view count.
-     */
-    function get_post_views( $post_id ) {
-        // Fetch the current view count
-        $count = get_post_meta( $post_id, POST_VIEWS_META_KEY, true );
-        
-        // If the count is empty or not numeric, treat it as 0
-        if ( $count === '' || ! is_numeric( $count ) ) {
-            $count = 0;
-        }
-        
-        // Use number_format_i18n for localization and formatting
-        $formatted_count = number_format_i18n( $count );
-        
-        return $formatted_count;
-    }
+if (! function_exists('get_post_views')) {
+	/**
+	 * Retrieves the view count for a given post ID.
+	 *
+	 * @param int $post_id The ID of the post to check.
+	 * @return string The formatted view count.
+	 */
+	function get_post_views($post_id)
+	{
+		// Fetch the current view count
+		$count = get_post_meta($post_id, POST_VIEWS_META_KEY, true);
+
+		// If the count is empty or not numeric, treat it as 0
+		if ($count === '' || ! is_numeric($count)) {
+			$count = 0;
+		}
+
+		// Use number_format_i18n for localization and formatting
+		$formatted_count = number_format_i18n($count);
+
+		return $formatted_count;
+	}
 }
+
+// register widget
+function tahrirone_widgets_init()
+{
+	// Check if the function exists before calling it
+		// Registering the Primary Blog Sidebar
+		for ($i = 1; $i <= 6; $i++) {
+			register_sidebar(array(
+				'name'          => __("Footer Widget $i", 'tahrirone'),
+				'id'            => "footer-$i",
+				'description'   => __("Footer widget area $i", 'tahrirone'),
+				'before_widget' => '<div class="footer-widget footer-widget-' . $i . '">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3 class="footer-widget-title">',
+				'after_title'   => '</h3>',
+			));
+		}
+}
+// The function must be hooked to the 'widgets_init' action
+add_action("widgets_init", "tahrirone_widgets_init");
 
 require HELLO_THEME_PATH . '/theme.php';
 

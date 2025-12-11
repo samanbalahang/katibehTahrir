@@ -14,7 +14,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>banta</title>
+    <title><?= get_the_title() ?></title>
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/assets/css/style.css">
     <link rel="shortcut icon" href="images/banta-fav.ico" type="image/x-icon">
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="main">
-            <div class="fixed top-3 right-100/100 w-80/100 h-[90vh] lg:h-auto bg-white lg:bg-transparent rounded-2xl shadow-xl lg:shadow-none lg:rounded-none lg:static lg:w-80/100 lg:mx-auto wp-menu-contianer z-5 overflow-y-scroll lg:overflow-visible p-8 lg:p-0" id="mainheader">
+            <div class="fixed top-3 right-100/100 w-80/100 h-[90vh] lg:h-auto bg-white lg:bg-transparent rounded-2xl shadow-xl lg:shadow-none lg:rounded-none lg:static lg:w-full lg:mx-auto wp-menu-contianer z-5 overflow-y-scroll lg:overflow-visible p-8 lg:p-0" id="mainheader">
                 <?php
                 $args = array(
                     'container' => false,

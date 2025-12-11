@@ -90,73 +90,73 @@ get_header();
         </section>
         <section class="w-full my-8 category">
             <div class="flex flex-wrap">
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/نوشتافزار/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-01.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/فانتزی-و-کادویی/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-02.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/لوازم-اداری/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-03.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/طراحی-و-نقاشی/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-04.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/لوازم-مهندسی/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-05.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                        <a href="/بازی-و-آموزشی/">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-06.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
                         <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-07.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
                         <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-08.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
                         <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-09.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
-                <div class="w-1/2 md:w-1/5 px-2">
+                <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
                         <a href="#">
-                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat.jpg" alt="دسته بندی" class="w-full">
+                            <img src="<?= get_template_directory_uri() ?>/assets/images/cat-10.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
@@ -309,7 +309,7 @@ get_header();
                                                 </a>
 
                                                 <!-- Social Icons (Favorites, Quick View, Share) -->
-                                                <div class="flex slider-social space-x-2 mr-2">
+                                                <div class="flex slider-social space-x-2 mr-2 items-center">
 
                                                     <!-- Favorites Icon -->
                                                     <a href="#" class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">

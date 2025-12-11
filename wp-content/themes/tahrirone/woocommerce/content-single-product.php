@@ -32,7 +32,7 @@ if (post_password_required()) {
 	return;
 }
 ?>
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class('flex flex-wrap w-full items-center', $product); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class('flex flex-wrap w-full items-center IAMHEREAA', $product); ?>>
 	<div class="w-full md:w-20/100">
 		<div class="w-full flex flex-col">
 			<div class="p-4">
@@ -49,42 +49,56 @@ if (post_password_required()) {
 		</div>
 	</div>
 	<div class="w-full md:w-80/100">
-		<div class="summary entry-summary">
-			<?php
-			/**
-			 * Hook: woocommerce_single_product_summary.
-			 *
-			 * @hooked woocommerce_template_single_title - 5
-			 * @hooked woocommerce_template_single_rating - 10
-			 * @hooked woocommerce_template_single_price - 10
-			 * @hooked woocommerce_template_single_excerpt - 20
-			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked woocommerce_template_single_meta - 40
-			 * @hooked woocommerce_template_single_sharing - 50
-			 * @hooked WC_Structured_Data::generate_product_data() - 60
-			 */
-			do_action('woocommerce_single_product_summary');
-			?>
+		<div class="text-2xl">
+			<?php woocommerce_template_single_title(); ?>
 		</div>
+		<div>
+			<?php woocommerce_template_single_rating(); ?>
+		</div>
+		<div class="text-2xl">
+			<?php woocommerce_template_single_price(); ?>
+		</div>
+		<div>
+			<?php woocommerce_template_single_excerpt(); ?>
+		</div>
+		<div>
+			<?php woocommerce_template_single_meta(); ?>
+		</div>
+		<div>
+			<?php woocommerce_template_single_sharing(); ?>
+		</div>
+		<div>
+			<?php
+				$structured_data_generator = new WC_Structured_Data();
+				$structured_data_generator->generate_product_data();
+			 ?>
+		</div>
+
 	</div>
+
 	<div class="w-full md:w-80/100">
 		<div class="p-4">
-			<form class="cart flex gap-4 items-center" action="[product_page_url]" method="post" enctype="multipart/form-data">
-				<div class="quantity w-fit">
-					<label class="screen-reader-text" for="quantity_65778a...">Quantity</label>
-					<input type="number"
-						id="quantity_65778a..."
-						class="input-text qty text border p-4 rounded"
-						step="1" min="1" max=""
-						name="quantity"
-						value="1"
-						title="Qty"
-						size="4"
-						placeholder=""
-						inputmode="numeric" />
-				</div>
-				<button type="submit" name="add-to-cart" value="[product_id]" class="single_add_to_cart_button button alt bg-green-400 text-white w-full rounded p-4 bold cursor-pointer">افزودن به سبد خرید</button>
-			</form>
+			<?php
+			if ($product->is_in_stock()) : ?>
+				<form class="cart flex gap-4 items-center" action="<?php echo esc_url(apply_filters('woocommerce_add_to_cart_form_action', $product->get_permalink())); ?>" method="post" enctype='multipart/form-data'>
+					<div class="quantity w-fit">
+						<label class="screen-reader-text" for="quantity_65778a...">Quantity</label>
+						<input type="number"
+							id="quantity_65778a..."
+							class="input-text qty text border p-4 rounded"
+							step="1" min="1" max=""
+							name="quantity"
+							value="1"
+							title="Qty"
+							size="4"
+							placeholder=""
+							inputmode="numeric" />
+					</div>
+					<button type="submit" name="add-to-cart" value="<?= $product->get_id(); ?>" class="single_add_to_cart_button button alt bg-green-400 text-white w-full rounded p-4 bold cursor-pointer">افزودن به سبد خرید</button>
+				</form>
+			<?php 
+			endif; 		
+			?>
 			<div class="accordion-container my-5">
 				<div class="accordion-item">
 					<button class="accordion-header text-right!">
@@ -98,7 +112,7 @@ if (post_password_required()) {
 						 */
 
 						// 1. Ensure we have a valid WooCommerce product object
-						global $product;
+
 
 						if (! is_a($product, 'WC_Product')) {
 							// If $product isn't set, try to get it from the global post object
@@ -180,4 +194,4 @@ if (post_password_required()) {
 	</div>
 </div>
 
-<?php do_action('woocommerce_after_single_product'); ?>
+<?php  do_action('woocommerce_after_single_product'); ?>

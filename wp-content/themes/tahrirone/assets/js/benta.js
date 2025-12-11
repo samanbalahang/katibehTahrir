@@ -6,6 +6,36 @@ document.addEventListener('DOMContentLoaded', () => {
     let body = document.body;
     let black, menuItems;
     let wpmenucontianer = document.querySelector(".wp-menu-contianer"); // Should be defined once
+    const menuList = document.querySelector(".wp-menu-contianer > ul");
+    let browserWidth = window.innerWidth;
+    let submenu;
+    console.log("browserWidth: ", browserWidth);
+    if (browserWidth < 1280 && browserWidth > 768) {
+        moreitem = document.createElement("li");
+        submenu = document.createElement("ul");
+        submenu.classList.add("sub-menu");
+        moreitemlink = document.createElement("a");
+        moreitemlink.innerText = "...";
+        moreitem.classList.add("menu-item-has-children", "dots");
+        moreitem.setAttribute("href", "#");
+        moreitem.append(moreitemlink);
+        moreitem.append(submenu);
+        console.log("browserWidth: ", browserWidth);
+        const allMenuItems = document.querySelectorAll(".wp-menu-contianer>ul>li");
+        let allMenuItemsCount = allMenuItems.length;
+        console.log("allMenuItemsCount: ", allMenuItemsCount);
+        let brackpoint = 0.078125;
+        let validateLength = Math.floor(allMenuItemsCount * brackpoint * 10);
+        console.log("validateLength: ", validateLength);
+        console.log(allMenuItemsCount * brackpoint);
+        if (allMenuItemsCount > validateLength) {
+            for (let i = validateLength; i < allMenuItemsCount; i++) {
+                const itemToMove = allMenuItems[i];
+                submenu.appendChild(itemToMove);
+            }
+        }
+        menuList.appendChild(moreitem);
+    }
     // SVG for the submenu back/arrow button
     const googleSvgLeftArrow = `
     <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="currentColor">
@@ -21,122 +51,125 @@ document.addEventListener('DOMContentLoaded', () => {
     </svg>
 `;
     // swipers
-    var swiper = new Swiper(".mySwipera", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
-    var swiper = new Swiper(".mySwiperb", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
-    var swiper = new Swiper(".mySwiperc", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
-    var swiper = new Swiper(".shegeftSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 10,
+    const mySwipera = document.querySelector(".mySwipera");
+    if (mySwipera) {
+        var swiper = new Swiper(".mySwipera", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
             },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-        },
-    });
-    var swiper = new Swiper(".sellerSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 10,
+        });
+        var swiper = new Swiper(".mySwiperb", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
             },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-        },
-    });
-    var swiper = new Swiper(".brandsSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 5,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        breakpoints: {
-            640: {
-                slidesPerView: 4,
-                spaceBetween: 10,
+        });
+        var swiper = new Swiper(".mySwiperc", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
-            768: {
-                slidesPerView: 5,
-                spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination",
             },
-            1024: {
-                slidesPerView: 5.5,
-                spaceBetween: 0,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
             },
-        },
-    });
+        });
+        var swiper = new Swiper(".shegeftSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        var swiper = new Swiper(".sellerSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+        var swiper = new Swiper(".brandsSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 5,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 5.5,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    }
     // hide show up arrow
     if (up) {
         window.addEventListener("scroll", () => {
@@ -310,5 +343,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+    }
+    // خواندن قیمت برای داشتن قیمت به تومان
+    let price = document.querySelector(".price");
+    console.log(price);
+
+    if (price) {
+        let toman = price.cloneNode(true);
+        if (toman.querySelector(".woocommerce-Price-currencySymbol")) {
+            toman.querySelector(".woocommerce-Price-currencySymbol").remove();
+        } else {
+            console.log("woocommerce-Price-currencySymbol NOT FINDED");
+        }
+        toman = toman.innerText;
+        const separators = /[.,/]/g;
+        let cleanNumberString = toman.replace(separators, '');
+        console.log(cleanNumberString); // Output: "10123000"
+        let finalNumber = parseInt(cleanNumberString, 10);
+        let numberWithoutLastDigit = String(finalNumber).slice(0, -1); // Result: "1012300" (String)
+        let numberToFormat = parseInt(numberWithoutLastDigit, 10); // Result: 1012300 (Number)
+        let formattedString = numberToFormat.toLocaleString('fa-IR');
+        let finalFormattedString = formattedString.replace(/,/g, '.');
+        console.log(`Final Formatted String: ${finalFormattedString}`);
+        tomanprice = document.createTextNode(finalFormattedString)
+        let div = document.createElement("div");
+        let bdi = document.createElement("bdi");
+        let currencySymbol = document.createElement("span");
+        currencySymbol.className = "woocommerce-Price-currencySymbol px-4";
+        currencySymbol.textContent = "تومان"; // Set text content directly
+        bdi.append(currencySymbol);
+        bdi.append(tomanprice);
+        div.append(bdi);
+        div = div.outerHTML;
+        price.insertAdjacentHTML("afterend", div);
     }
 });
