@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 el: ".swiper-pagination",
             },
             autoplay: {
-                delay: 2500,
+                delay: 3000,
                 disableOnInteraction: false,
             },
         });
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 el: ".swiper-pagination",
             },
             autoplay: {
-                delay: 2500,
+                delay: 3500,
                 disableOnInteraction: false,
             },
         });

@@ -33,7 +33,7 @@ if (post_password_required()) {
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('flex flex-wrap w-full items-center IAMHEREAA', $product); ?>>
-	<div class="w-full md:w-20/100">
+	<div class="w-full md:w-40/100">
 		<div class="w-full flex flex-col">
 			<div class="p-4">
 				<?php
@@ -48,7 +48,7 @@ if (post_password_required()) {
 			</div>
 		</div>
 	</div>
-	<div class="w-full md:w-80/100">
+	<div class="w-full md:w-60/100">
 		<div class="text-2xl">
 			<?php woocommerce_template_single_title(); ?>
 		</div>

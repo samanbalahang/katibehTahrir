@@ -20,6 +20,11 @@
     <link rel="shortcut icon" href="images/banta-fav.ico" type="image/x-icon">
     <!-- https://banta-fashion.bantaco.ir/ -->
     <?php wp_head(); ?>
+    <?php 
+    // Get the cart contents count
+    $cart_item_count = WC()->cart->get_cart_contents_count();
+    $cart_url = wc_get_cart_url(); // Assuming $cart_url is not set yet
+    ?>
 </head>
 
 <body>
@@ -78,14 +83,19 @@
                 <input type="text" placeholder="جستجو در میان صدها برند معتبر" class="rounded-full w-full pr-5 p-4" name="s">
             </form>
             <div class="flex items-center gap-4">
-                <a href="<?= esc_url($cart_url); ?>">
+                <a href="<?= esc_url($cart_url); ?>" class="relative">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#1f1f1f">
                         <path
                             d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM218-774h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Z" />
                     </svg>
+                    <?php if ($cart_item_count > 0) : ?>
+                        <span class="woocommerce-cart-count absolute -top-2 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-darkprim text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                            <?= esc_html($cart_item_count); ?>
+                        </span>
+                    <?php endif; ?>
                 </a>
-                <a href="<?= esc_url($cart_url); ?>" class="flex bg-primary! text-darkprim! visited:text-darkprim! px-4 py-2 rounded-xl">
+                <a href="<?= esc_url(wc_get_page_permalink('myaccount')); ?>" class="flex bg-primary! text-darkprim! visited:text-darkprim! px-4 py-2 rounded-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         class="fill-darkprim">
                         <path

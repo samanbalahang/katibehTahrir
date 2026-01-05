@@ -491,6 +491,38 @@ h1.product_title.entry-title{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+button.wc-block-cart-item__remove-link{
+    font-size: large !important;
+    color: var(--color-secondary) !important;
+}
+.wc-block-cart-item__quantity{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.site-main{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.entry-title{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 1rem;
+}
+/* Container for the thumbnails */
+.flex-control-nav.flex-control-thumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if many thumbnails exist */
+    justify-content: flex-start; /* Aligns thumbnails to the start */
+    gap: 10px; /* Space between each thumbnail (Adjust as needed) */
+}
+.flex-control-nav.flex-control-thumbs li {
+    margin: 0; /* Clear any residual margin */
+    padding: 0;
+    cursor: pointer;
+}
 @media (min-width:768px) {
 
     .wp-menu-contianer ul {

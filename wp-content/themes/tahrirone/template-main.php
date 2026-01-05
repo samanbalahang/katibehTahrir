@@ -92,70 +92,70 @@ get_header();
             <div class="flex flex-wrap">
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/نوشتافزار/">
+                        <a href="https://tahrir1.ir/product-category/%d9%86%d9%88%d8%b4%d8%aa-%d8%a7%d9%81%d8%b2%d8%a7%d8%b1/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-01.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/فانتزی-و-کادویی/">
+                        <a href="https://tahrir1.ir/product-category/%d9%81%d8%a7%d9%86%d8%aa%d8%b2%db%8c-%d9%88-%da%a9%d8%a7%d8%af%d9%88%db%8c%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-02.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/لوازم-اداری/">
+                        <a href="https://tahrir1.ir/product-category/%d9%84%d9%88%d8%a7%d8%b2%d9%85-%d8%a7%d8%af%d8%a7%d8%b1%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-03.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/طراحی-و-نقاشی/">
+                        <a href="https://tahrir1.ir/product-category/%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d9%88-%d9%86%d9%82%d8%a7%d8%b4%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-04.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/لوازم-مهندسی/">
+                        <a href="https://tahrir1.ir/product-category/%d9%84%d9%88%d8%a7%d8%b2%d9%85-%d9%85%d9%87%d9%86%d8%af%d8%b3%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-05.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="/بازی-و-آموزشی/">
+                        <a href="https://tahrir1.ir/product-category/%d8%a8%d8%a7%d8%b2%db%8c-%d9%88-%d8%a2%d9%85%d9%88%d8%b2%d8%b4%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-06.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
+                        <a href="https://tahrir1.ir/product-category/%da%a9%d9%88%d9%84%d9%87-%d9%be%d8%b4%d8%aa%db%8c-%d9%88-%d8%ac%d8%a7%d9%85%d8%af%d8%a7%d8%af%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-07.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
+                        <a href="https://tahrir1.ir/product-category/%d9%84%d9%88%d8%a7%d8%b2%d9%85-%d8%af%db%8c%d8%ac%db%8c%d8%aa%d8%a7%d9%84/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-08.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
+                        <a href="https://tahrir1.ir/product-category/%d8%b3%d8%b1%d8%b1%d8%b3%db%8c%d8%af-%d9%88%d8%aa%d9%82%d9%88%db%8c%d9%85/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-09.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
                 </div>
                 <div class="w-1/2 md:w-1/5 px-2 mb-4">
                     <div class="overflow-hidden rounded-xl">
-                        <a href="#">
+                        <a href="https://tahrir1.ir/product-category/%d9%82%d9%84%d9%85-%d9%88-%d9%87%d8%af%d8%a7%db%8c%d8%a7%db%8c-%d8%aa%d8%a8%d9%84%db%8c%d8%ba%d8%a7%d8%aa%db%8c/">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/cat-10.jpg" alt="دسته بندی" class="w-full">
                         </a>
                     </div>
