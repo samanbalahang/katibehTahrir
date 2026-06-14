@@ -16,10 +16,11 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
-
+/node_modules
+/wp-content/plugins
 # Configuration
 wp-config.php
-
+/assets/node_modules
 # Example themes
 /wp-content/themes/twenty*/
 

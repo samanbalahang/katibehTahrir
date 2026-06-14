@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        تحریروان
+    </title>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/banta-fav.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="flex lg:hidden">
+        <div class="flex justify-between items-center w-full p-4">
+            <a href="#" rel="home" class="block w-20/100">
+                <img src="assets/images/TAHRIR-02.png" alt="TAHRIR" class="w-full">
+            </a>
+            <div class="flex gap-1">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM218-774h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Z" />
+                    </svg>
+                </a>
+                <a href="/جستجو/" class="bg-primary text-darkprim rounded-lg p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        class="fill-darkprim">
+                        <path
+                            d="M480-512q-44.55 0-76.27-31.72Q372-575.45 372-620t31.73-76.28Q435.45-728 480-728t76.28 31.72Q588-664.55 588-620t-31.72 76.28Q524.55-512 480-512ZM212-232v-52q0-22 13.5-41.5T262-356q55-26 109.5-39T480-408q54 0 108.5 13T698-356q23 11 36.5 30.5T748-284v52H212Z" />
+                    </svg>
+                </a>
+                <a href="/جستجو/" class="bg-primary text-darkprim rounded-lg p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f" class="fill-darkprim">
+                        <path
+                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                    </svg>
+                </a>
+                <a href="#" class="bg-primary text-darkprim rounded-lg p-2" id="bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f" class="fill-darkprim">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+    <header class="container lg:mx-auto lg:py-4 lg:border-b">
+        <div class="top hidden lg:flex justify-between items-center ">
+            <a href="#" class="rounded-full px-4 w-9/100">
+                <img src="assets/images/TAHRIR-02.png" alt="TAHRIR-02" class="w-full">
+            </a>
+            <form action="#" class="flex items-center bg-third rounded-full w-50/100">
+                <span class="p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                    </svg>
+                </span>
+                <input type="text" placeholder="جستجو در میان صدها برند معتبر" class="rounded-full w-full pr-5 p-4"
+                    name="s">
+            </form>
+            <div class="flex items-center gap-4">
+                <a href="#" class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path
+                            d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM218-774h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Z" />
+                    </svg>
+                    <span
+                        class="woocommerce-cart-count absolute -top-2 right-0 transform translate-x-1/2 -translate-y-1/2 bg-primary text-darkprim text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                        0
+                    </span>
+                </a>
+                <a href="#" class="flex bg-primary! text-darkprim! visited:text-darkprim! px-4 py-2 rounded-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        class="fill-darkprim">
+                        <path
+                            d="M480-512q-44.55 0-76.27-31.72Q372-575.45 372-620t31.73-76.28Q435.45-728 480-728t76.28 31.72Q588-664.55 588-620t-31.72 76.28Q524.55-512 480-512ZM212-232v-52q0-22 13.5-41.5T262-356q55-26 109.5-39T480-408q54 0 108.5 13T698-356q23 11 36.5 30.5T748-284v52H212Z" />
+                    </svg>
+                    ورود/ثبت‌نام
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="fixed top-3 right-100/100 w-80/100 h-[90vh] lg:h-auto bg-white lg:bg-transparent rounded-2xl shadow-xl lg:shadow-none lg:rounded-none lg:static lg:w-full lg:mx-auto wp-menu-contianer z-5 overflow-y-scroll lg:overflow-visible p-8 lg:p-0"
+                id="mainheader">
+                <ul class="primary">
+                    <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17524 current_page_item menu-item-17529">
+                        <a href="#" aria-current="page">خانه</a>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17540">
+                        <a href="#">نوشت
+                            افزار</a>
+                        <ul class="sub-menu">
+                            <li
+                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17541">
+                                <a href="#">نوشت افزار</a>
+                                <ul class="sub-menu">
+                                    <li
+                                        class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17562">
+                                        <a href="#">مداد
+                                            قرمز پلیمری ادمیرال(6جین)</a>
+                                    </li>
+                                    <li
+                                        class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17561">
+                                        <a href="#">مداد
+                                            قرمز(بدنه سه گوش</a>
+                                    </li>
+                                    <li
+                                        class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17560">
+                                        <a href="#">مداد
+                                            قرمز شش گوش</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17542">
+                        <a href="#">فانتزی</a>
+                        <ul class="sub-menu">
+                            <li
+                                class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17543">
+                                <a href="#">فانتزی و کادویی</a>
+                                <ul class="sub-menu">
+                                    <li
+                                        class="menu-item menu-item-type-post_type menu-item-object-product menu-item-17563">
+                                        <a href="#">آینه
+                                            گرد تاشو</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17544">
+                        <a href="#">اداری</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17545">
+                                <a href="#">لوازم اداری</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17546">
+                        <a href="#">طراحی</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17547">
+                                <a href="#">طراحی و نقاشی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17548">
+                        <a href="#">لوازم
+                            مهندسی</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17549">
+                                <a href="#">لوازم مهندسی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17550">
+                        <a href="#">بازی
+                            و آموزشی</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17551">
+                                <a href="#">بازی و آموزشی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17553">
+                        <a href="#">کوله
+                            پشتی و جامدادی</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17552">
+                                <a href="#">جامدادی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17554">
+                        <a href="#">لوازم
+                            دیجیتال</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17559">
+                                <a href="#">باتری</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17556">
+                        <a href="#">سررسید
+                            وتقویم</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17555">
+                                <a href="#">تقویم و سررسید</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-17557">
+                        <a href="#">قلم
+                            و هدایای تبلیغاتی</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17558">
+                                <a href="#">قلم و هدایای
+                                    تبلیغاتی</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="w-full mt-8">
+        <div class="container mx-auto">
+            <section class="first-sliders w-full slider">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 px-2 mb-8">
+                        <!-- Swiper -->
+                        <div class="swiper mySwipera">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-01.jpg" alt="slider">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-02.jpg" alt="slider">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2 mb-8">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiperb">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-03.jpg" alt="slider">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-04.jpg" alt="slider">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-2 mb-8">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiperc">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-05.jpg" alt="slider">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-full rounded-xl overflow-hidden">
+
+
+
+                                        <img src="assets/images/slider-06.jpg" alt="slider">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full my-8 category">
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-01.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-02.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-03.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-04.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-05.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-06.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-07.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-08.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-09.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="w-1/2 md:w-1/5 px-2 mb-4">
+                        <div class="overflow-hidden rounded-xl">
+                            <a href="#">
+                                <img src="./assets/images/cat-10.jpg" alt="دسته بندی" class="w-full">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="shegeft">
+                <div class="flex justify-between items-center">
+                    <h2 class="font-bold md:text-2xl shegeft-title">
+                        "shegeft"
+                    </h2>
+                    <a href="" shegeftall"" class="flex border rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M395-276 191-480l204-204 20 20-170 170h524v28H245l170 170-20 20Z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex flex-wrap mt-10 mb-5">
+                    <div class="w-full md:w-10/100 px-4">
+
+
+
+                        <img src="assets/images/slider-01.jpg" alt="slider">
+                    </div>
+                    <div class="w-full md:w-90/100 px-4">
+                        <!-- Swiper -->
+                        <div class="swiper shegeftSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="my-4 porfroshtarin">
+                <h2 class="font-bold text-xl text-center">
+                    <span class="rounded-full px-4 line-left-right">
+                        "selltitle"
+                    </span>
+                </h2>
+                <div class="px-13 relative sellerSwiper-parent my-8">
+                    <!-- Swiper -->
+                    <div class="swiper sellerSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                </a>
+            </section>
+            <section class="w-full my-10 khadamat">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/4 px-4">
+                        <div class="ad flex flex-col justify-center items-center">
+                            <img src="./assets/images/services.png" alt="services">
+                            <h2 class="font-bold">
+                                'services'
+                            </h2>
+                            <p class="text-center">
+                                'servicestext'
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4">
+                        <div class="ad flex flex-col justify-center items-center">
+                            <img src="./assets/images/zemanat.png" alt="services">
+                            <h2 class="font-bold">
+                                'zemanat'
+                            </h2>
+                            <p class="text-center">
+                                'zemanattext'
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4">
+                        <div class="ad flex flex-col justify-center items-center">
+                            <img src="./assets/images/esalat.png" alt="services">
+                            <h2 class="font-bold">
+                                'esalat'
+                            </h2>
+                            <p class="text-center">
+                                'esalattext'
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/4 px-4">
+                        <div class="ad flex flex-col justify-center items-center">
+                            <img src="./assets/images/fast.png" alt="services">
+                            <h2 class="font-bold">
+                                'fast'
+                            </h2>
+                            <p class="text-center">
+                                'fasttext'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="w-full bg-third py-8 brands">
+            <div class="container mx-auto">
+                <h2 class="text-center font-bold md:text-2xl">
+                    <span class="px-4 line-left-right">
+                        'bestbrands'
+                    </span>
+                </h2>
+                <!-- Swiper -->
+                <div class="swiper brandsSwiper my-8">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <a href="/costomerbrands-logos"
+                class="block mx-auto border border-darkprim rounded-full px-8 py-2 text-darkprim w-80/100 md:w-20/100 text-center">
+                مشاهده همه برندها
+            </a>
+        </section>
+        <section class="container mx-auto my-10 blogs">
+            <h2 class="text-center font-bold md:text-2xl">
+                <span class="px-4 line-left-right">
+                    'blog'
+                </span>
+            </h2>
+            <div class="flex flex-wrap my-8">
+                <div class="w-full md:w-1/4 px-4 my-4">
+                    <div class="bg-primary rounded-lg pl-4 pt-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <a href="#">
+                                <img src="<?= get_the_post_thumbnail_url(" alt="<?= get_the_title("
+                                    class="w-full rounded-lg">
+                            </a>
+                            <h2 class="text-center font-bold">
+                                نام محصول
+                            </h2>
+                            <div class="flex text-darkprim">
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M602-315 466-451v-193h28v182l127 127-19 20ZM466-720v-80h28v80h-28Zm254 254v-28h80v28h-80ZM466-160v-80h28v80h-28ZM160-466v-28h80v28h-80Zm320.17 334q-72.17 0-135.73-27.39-63.56-27.39-110.57-74.35-47.02-46.96-74.44-110.43Q132-407.65 132-479.83q0-72.17 27.39-135.73 27.39-63.56 74.35-110.57 46.96-47.02 110.43-74.44Q407.65-828 479.83-828q72.17 0 135.73 27.39 63.56 27.39 110.57 74.35 47.02 46.96 74.44 110.43Q828-552.35 828-480.17q0 72.17-27.39 135.73-27.39 63.56-74.35 110.57-46.96 47.02-110.43 74.44Q552.35-132 480.17-132Zm-.17-28q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                                    </svg>
+
+                                    ۳ مرداد ۱۴۰۱
+                                </p>
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M480.24-364q56.76 0 96.26-39.74 39.5-39.73 39.5-96.5 0-56.76-39.74-96.26-39.73-39.5-96.5-39.5-56.76 0-96.26 39.74-39.5 39.73-39.5 96.5 0 56.76 39.74 96.26 39.73 39.5 96.5 39.5Zm-.24-28q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.14 140Q355-252 252-319.5 149-387 96-500q53-113 155.86-180.5 102.85-67.5 228-67.5Q605-748 708-680.5 811-613 864-500q-53 113-155.86 180.5-102.85 67.5-228 67.5ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                                    </svg> </p>
+                            </div>
+                            <a href="#"
+                                class="flex w-80/100 mx-auto mt-8 mb-2 rounded-lg text-primary bg-darkprim px-4 py-2 text-center justify-center hover:bg-primary hover:text-darkprim group hover:border hover:border-darkprim">
+                                مشاهده
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1f1f1f" class="fill-primary group-hover:fill-darkprim">
+                                    <path d="M395-276 191-480l204-204 20 20-170 170h524v28H245l170 170-20 20Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                مشاهده همه
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="colophon" class="py-10 w-full border-t border-t-black pt-18">
+
+        <div class="container mx-auto px-4">
+
+            <div class="footer-widgets grid grid-cols-1 gap-8 items-center">
+
+                <div class="
+                md:grid md:grid-cols-3  2xl:grid-cols-5 md:gap-6
+                grid grid-cols-1 gap-8 items-center
+            ">
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="site-info text-center mt-10 pt-6">
+
+            <div class="footer-widget-area-6 w-full mt-6 border-t border-gray-700 pt-6">
+
+            </div>
+
+        </div>
+        </div>
+    </footer>
+
+
+    <a href="#" class="fixed bottom-10 right-5 bg-darkprim z-5 border border-white shadow-xl hidden" id="up">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" class="fill-white"
+            fill="#1f1f1f">
+            <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+        </svg>
+    </a>
+
+    <a href="#"
+        class="fixed bottom-10 left-5 bg-darkprim z-5 border border-white shadow-xl block w-15 h-15 rounded-full p-2"
+        id="whatsapp">
+        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-full h-full">
+            <style>
+                .s0 {
+                    fill: none;
+                    stroke: white;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 20
+                }
+            </style>
+            <path class="s0"
+                d="m363.39 118.99c-37.22-36.21-86.8-56.13-139.48-56.13-108.74 0-197.22 85.88-197.22 191.42 0 33.71 9.06 66.65 26.29 95.7l-27.98 99.16 104.56-26.64c28.79 15.26 61.21 23.28 94.26 23.28h0.09c108.65 0 199.09-85.88 199.09-191.42 0-51.13-22.39-99.16-59.61-135.37zm-49.57 175.38c-4.89-2.41-29.14-13.97-33.67-15.52-4.53-1.64-7.82-2.42-11.11 2.41-3.29 4.83-12.7 15.52-15.63 18.8-2.85 3.19-5.78 3.62-10.66 1.21-28.97-14.06-47.98-25.09-67.08-56.91-5.06-8.45 5.07-7.85 14.48-26.13 1.6-3.19 0.8-5.95-0.44-8.36-1.25-2.41-11.11-25.95-15.19-35.52-4-9.32-8.09-8.02-11.11-8.19-2.84-0.18-6.13-0.18-9.42-0.18-3.28 0-8.61 1.21-13.14 5.95-4.53 4.83-17.24 16.38-17.24 39.92 0 23.54 17.68 46.31 20.08 49.5 2.49 3.19 34.74 51.47 84.22 72.25 31.27 13.11 43.53 14.23 59.17 11.99 9.5-1.38 29.14-11.56 33.22-22.77 4.09-11.21 4.09-20.78 2.84-22.76-1.15-2.16-4.44-3.36-9.32-5.69z" />
+        </svg>
+    </a>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/benta.js"></script>
+</body>
+
+</html>
