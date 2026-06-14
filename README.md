@@ -4,7 +4,12 @@
 این قالب دارای یک سیستم اختصاصی برای **ایمپورت محصولات** از سایت‌ها یا فایل‌های اکسل است و کاملاً بدون نیاز به نسخه‌های پرو کار می‌کند.
 
 ---
+# مشاهده دمو
 
+- **دموی آنلاین:** [samanbalahang.github.io/katibehTahrir/](https://samanbalahang.github.io/katibehTahrir/)
+- **GitHub Repository:** [github.com/samanbalahang/katibehTahrir](https://github.com/samanbalahang/katibehTahrir)
+
+---
 # 📌 ویژگی‌های اصلی قالب
 
 - **طراحی کاملاً واکنشگرا**
@@ -74,7 +79,12 @@ A professional stationery store WordPress theme built on the **free Astra theme*
 The theme includes a custom **product import system** for importing products from websites or Excel files—without requiring any PRO plugins.
 
 ---
+---
+# Live Demo
+- **live Demo** [samanbalahang.github.io/katibehTahrir/](https://samanbalahang.github.io/katibehTahrir/)
+- **GitHub Repository:** [github.com/samanbalahang/katibehTahrir](https://github.com/samanbalahang/katibehTahrir)
 
+---
 # 🔹 Key Features
 
 - Fully responsive design  

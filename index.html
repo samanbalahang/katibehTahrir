@@ -384,7 +384,7 @@
             <section class="shegeft">
                 <div class="flex justify-between items-center">
                     <h2 class="font-bold md:text-2xl shegeft-title">
-                        "shegeft"
+                        "شگفت انگیزهای امروز"
                     </h2>
                     <a href="" shegeftall"" class="flex border rounded-full p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
@@ -395,15 +395,628 @@
                 </div>
                 <div class="flex flex-wrap mt-10 mb-5">
                     <div class="w-full md:w-10/100 px-4">
-
-
-
-                        <img src="assets/images/slider-01.jpg" alt="slider">
+                        <img src="assets/images/amazing-1.png" alt="slider">
                     </div>
                     <div class="w-full md:w-90/100 px-4">
                         <!-- Swiper -->
                         <div class="swiper shegeftSwiper">
                             <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
+                                        <!-- Product Image Link -->
+                                        <a href="#" class="block overflow-hidden rounded-lg">
+                                            <img src="assets/images/product.jpg" alt="product">
+                                        </a>
+
+                                        <!-- Product Title -->
+                                        <h2 class="font-bold my-2">
+                                            <a href="#" class="hover:text-blue-600 transition-colors">
+                                                نام محصول
+                                            </a>
+                                        </h2>
+
+                                        <!-- Price Section (Toman Price is assumed to be formatted already by format_toman_price) -->
+                                        <div class="flex justify-center gap-1 items-center mt-auto">
+
+                                            <!-- Regular Price (Strikethrough) -->
+                                            <p class="text-secondary line-through text-xs">
+                                                توضیح محصول
+                                            </p>
+
+                                            <!-- Current Price -->
+                                            <p
+                                                class="bg-primary text-darkprim px-2 py-2 font-bold rounded-lg flex items-center">
+                                                <span>
+                                                    1000/000/000
+                                                </span>
+                                                <span class="mr-1">
+                                                    تومان
+                                                </span>
+                                            </p>
+
+                                        </div>
+
+                                        <!-- Action Buttons (Add to Cart / Social) -->
+                                        <div class="slider-addtocard flex justify-between items-center mt-3">
+
+                                            <!-- Add to Cart Button (linked to product page for simplicity) -->
+                                            <a href="#"
+                                                class="addtocard-button flex items-center justify-center p-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition-colors flex-grow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                    viewBox="0 -960 960 960" width="24px" fill="currentColor"
+                                                    class="ml-2">
+                                                    <path
+                                                        d="M296-126q-23 0-38.5-15.5T242-180q0-23 15.5-38.5T296-234q23 0 38.5 15.5T350-180q0 23-15.5 38.5T296-126Zm368 0q-23 0-38.5-15.5T610-180q0-23 15.5-38.5T664-234q23 0 38.5 15.5T718-180q0 23-15.5 38.5T664-126ZM232-746l110 232h261q9 0 16-4.5t12-12.5l103-187q6-11 1-19.5t-17-8.5H232Zm-14-28h500q27 0 40.5 21.5T760-708L654-514q-8 13-20.5 20.5T606-486H324l-50 92q-8 12-.5 26t22.5 14h422v28H296q-32 0-47.5-26.5T248-406l62-110-148-310H92v-28h88l38 80Zm124 260h280-280Z" />
+                                                </svg>
+                                                <span>
+                                                    افزودن به سبد خرید
+                                                </span>
+                                            </a>
+
+                                            <!-- Social Icons (Favorites, Quick View, Share) -->
+                                            <div class="flex slider-social space-x-2 mr-2 items-center">
+
+                                                <!-- Favorites Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-red-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Quick View Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-blue-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z" />
+                                                    </svg>
+                                                </a>
+
+                                                <!-- Share Icon -->
+                                                <a href="#"
+                                                    class="text-gray-500 hover:text-green-500 transition-colors p-2 rounded-full border border-gray-200">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                        viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                                        <path
+                                                            d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="swiper-slide">
                                     <div class="border rounded-xl flex flex-col bg-white p-4 overflow-hidden group">
                                         <!-- Product Image Link -->
@@ -503,7 +1116,7 @@
             <section class="my-4 porfroshtarin">
                 <h2 class="font-bold text-xl text-center">
                     <span class="rounded-full px-4 line-left-right">
-                        "selltitle"
+                        پرفروشترین محصولات
                     </span>
                 </h2>
                 <div class="px-13 relative sellerSwiper-parent my-8">
@@ -531,7 +1144,434 @@
 
 
                                                 <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
 
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
+                                                </span>
+                                            </div>
+
+
+                                            <span
+                                                class="bg-darkprim flex justify-center items-center text-white rounded-full px-4">
+
+                                            </span>
+
+
+                                        </div>
+                                    </a>
+
+                                    <div
+                                        class="absolute w-35/100 rounded-full border flex justify-between items-center p-4 -top-20 left-50/100 -translate-x-50/100 bg-white group-hover:top-50/100 duration-220 ">
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="m480-190-22-20q-97-89-160.5-152t-100-110.5Q161-520 146.5-558T132-634q0-71 48.5-119.5T300-802q53 0 99 28.5t81 83.5q35-55 81-83.5t99-28.5q71 0 119.5 48.5T828-634q0 38-14.5 76t-51 85.5Q726-425 663-362T502-210l-22 20Zm0-38q96-87 158-149t98-107.5q36-45.5 50-80.5t14-69q0-60-40-100t-100-40q-48 0-88.5 27.5T494-660h-28q-38-60-78-87t-88-27q-59 0-99.5 40T160-634q0 34 14 69t50 80.5q36 45.5 98 107T480-228Zm0-273Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M778-164 528-414q-30 26-69 40t-77 14q-92.23 0-156.12-63.84-63.88-63.83-63.88-156Q162-672 225.84-736q63.83-64 156-64Q474-800 538-736.12q64 63.89 64 156.12 0 41-15 80t-39 66l250 250-20 20ZM382-388q81 0 136.5-55.5T574-580q0-81-55.5-136.5T382-772q-81 0-136.5 55.5T190-580q0 81 55.5 136.5T382-388Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                                                <path
+                                                    d="M572-212v-28h130L557-385l20-20 143 143v-123h28v173H572Zm-340 0-20-20 488-488H572v-28h176v173h-28v-125L232-212Zm146-351L212-729l19-19 166 166-19 19Z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="rounded-xl border overflow-hidden p-4 relative group">
+                                    <a href="#">
+                                        <img src="assets/images/product.jpg" alt="product">
+                                    </a>
+                                    <h2 class="font-bold my-2">
+                                        <a href="#">
+                                            نام محصول
+                                        </a>
+                                    </h2>
+                                    <hr>
+
+                                    <a href="#">
+                                        <div class="flex justify-end my-5">
+                                            <div class="flex flex-col">
+                                                <span class="line-through">
+
+                                                </span>
+
+
+                                                <span class="font-bold">
+                                                    75,000 تومان
                                                 </span>
                                             </div>
 
@@ -577,6 +1617,9 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
+                <a href="http://localhost/Writingsupplies/%d8%ae%d8%a7%d9%86%d9%87/" target="_self"
+                    class="block mx-auto border border-darkprim rounded-full px-8 py-2 text-darkprim w-80/100 md:w-20/100 text-center">
+                    همه پرفروشها
                 </a>
             </section>
             <section class="w-full my-10 khadamat">
@@ -585,10 +1628,11 @@
                         <div class="ad flex flex-col justify-center items-center">
                             <img src="./assets/images/services.png" alt="services">
                             <h2 class="font-bold">
-                                'services'
+                                خدمات پس از خرید
                             </h2>
                             <p class="text-center">
-                                'servicestext'
+                                میزبان صدای گرمتان هستیم. هدف تیم پشتیبانی ما تلاش با تمام قوا برای ارائه بهترین خدمات
+                                به مشتریان عزیز می باشد.
                             </p>
                         </div>
                     </div>
@@ -596,10 +1640,13 @@
                         <div class="ad flex flex-col justify-center items-center">
                             <img src="./assets/images/zemanat.png" alt="services">
                             <h2 class="font-bold">
-                                'zemanat'
+                                ضمانت بازگشت کالا
+
                             </h2>
                             <p class="text-center">
-                                'zemanattext'
+                                تا ۷ روز برای احترام به انتخاب مشتریان کالای خریداری شده برگردانده می‌شود.
+
+
                             </p>
                         </div>
                     </div>
@@ -607,10 +1654,11 @@
                         <div class="ad flex flex-col justify-center items-center">
                             <img src="./assets/images/esalat.png" alt="services">
                             <h2 class="font-bold">
-                                'esalat'
+                                ضمانت اصالت
+
                             </h2>
                             <p class="text-center">
-                                'esalattext'
+                                تمامی کالاها اورجینال و با ضمانت اصل بودن از نمایندگی معتبر تهیه و ارائه می‌شوند.
                             </p>
                         </div>
                     </div>
@@ -618,10 +1666,14 @@
                         <div class="ad flex flex-col justify-center items-center">
                             <img src="./assets/images/fast.png" alt="services">
                             <h2 class="font-bold">
-                                'fast'
+                                ارسال سریع و رایگان
+
                             </h2>
                             <p class="text-center">
-                                'fasttext'
+                                ارسال رایگان برای خریدهای بالای 1 میلیون و 200 هزار تومان و در زمان انتخابی مشتری به
+                                سریعترین شکل ممکن می‌باشد.
+
+
                             </p>
                         </div>
                     </div>
@@ -632,7 +1684,7 @@
             <div class="container mx-auto">
                 <h2 class="text-center font-bold md:text-2xl">
                     <span class="px-4 line-left-right">
-                        'bestbrands'
+                        برترین برندها در بانتا مد
                     </span>
                 </h2>
                 <!-- Swiper -->
@@ -642,7 +1694,88 @@
                             <div class="h-65">
                                 <div class="bg-white">
                                     <a href="#">
-
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="h-65">
+                                <div class="bg-white">
+                                    <a href="#">
+                                        <img src="assets/images/vesta.webp" alt="vesta">
                                     </a>
                                 </div>
                             </div>
@@ -659,7 +1792,7 @@
         <section class="container mx-auto my-10 blogs">
             <h2 class="text-center font-bold md:text-2xl">
                 <span class="px-4 line-left-right">
-                    'blog'
+                    جدید ترین مگ
                 </span>
             </h2>
             <div class="flex flex-wrap my-8">
@@ -667,11 +1800,10 @@
                     <div class="bg-primary rounded-lg pl-4 pt-4">
                         <div class="bg-white rounded-lg p-4">
                             <a href="#">
-                                <img src="<?= get_the_post_thumbnail_url(" alt="<?= get_the_title("
-                                    class="w-full rounded-lg">
+                                <img src="assets/images/blog.png" alt="blog.png" class="w-full rounded-lg">
                             </a>
                             <h2 class="text-center font-bold">
-                                نام محصول
+                                چگونه عینک آفتابی انتخاب کنیم؟
                             </h2>
                             <div class="flex text-darkprim">
                                 <p class="flex text-darkprim">
@@ -688,7 +1820,122 @@
                                         width="24px" class="fill-darkprim">
                                         <path
                                             d="M480.24-364q56.76 0 96.26-39.74 39.5-39.73 39.5-96.5 0-56.76-39.74-96.26-39.73-39.5-96.5-39.5-56.76 0-96.26 39.74-39.5 39.73-39.5 96.5 0 56.76 39.74 96.26 39.73 39.5 96.5 39.5Zm-.24-28q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.14 140Q355-252 252-319.5 149-387 96-500q53-113 155.86-180.5 102.85-67.5 228-67.5Q605-748 708-680.5 811-613 864-500q-53 113-155.86 180.5-102.85 67.5-228 67.5ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
-                                    </svg> </p>
+                                    </svg>
+                                </p>
+                            </div>
+                            <a href="#"
+                                class="flex w-80/100 mx-auto mt-8 mb-2 rounded-lg text-primary bg-darkprim px-4 py-2 text-center justify-center hover:bg-primary hover:text-darkprim group hover:border hover:border-darkprim">
+                                مشاهده
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1f1f1f" class="fill-primary group-hover:fill-darkprim">
+                                    <path d="M395-276 191-480l204-204 20 20-170 170h524v28H245l170 170-20 20Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 my-4">
+                    <div class="bg-primary rounded-lg pl-4 pt-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <a href="#">
+                                <img src="assets/images/blog.png" alt="blog.png" class="w-full rounded-lg">
+                            </a>
+                            <h2 class="text-center font-bold">
+                                چگونه عینک آفتابی انتخاب کنیم؟
+                            </h2>
+                            <div class="flex text-darkprim">
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M602-315 466-451v-193h28v182l127 127-19 20ZM466-720v-80h28v80h-28Zm254 254v-28h80v28h-80ZM466-160v-80h28v80h-28ZM160-466v-28h80v28h-80Zm320.17 334q-72.17 0-135.73-27.39-63.56-27.39-110.57-74.35-47.02-46.96-74.44-110.43Q132-407.65 132-479.83q0-72.17 27.39-135.73 27.39-63.56 74.35-110.57 46.96-47.02 110.43-74.44Q407.65-828 479.83-828q72.17 0 135.73 27.39 63.56 27.39 110.57 74.35 47.02 46.96 74.44 110.43Q828-552.35 828-480.17q0 72.17-27.39 135.73-27.39 63.56-74.35 110.57-46.96 47.02-110.43 74.44Q552.35-132 480.17-132Zm-.17-28q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                                    </svg>
+
+                                    ۳ مرداد ۱۴۰۱
+                                </p>
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M480.24-364q56.76 0 96.26-39.74 39.5-39.73 39.5-96.5 0-56.76-39.74-96.26-39.73-39.5-96.5-39.5-56.76 0-96.26 39.74-39.5 39.73-39.5 96.5 0 56.76 39.74 96.26 39.73 39.5 96.5 39.5Zm-.24-28q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.14 140Q355-252 252-319.5 149-387 96-500q53-113 155.86-180.5 102.85-67.5 228-67.5Q605-748 708-680.5 811-613 864-500q-53 113-155.86 180.5-102.85 67.5-228 67.5ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <a href="#"
+                                class="flex w-80/100 mx-auto mt-8 mb-2 rounded-lg text-primary bg-darkprim px-4 py-2 text-center justify-center hover:bg-primary hover:text-darkprim group hover:border hover:border-darkprim">
+                                مشاهده
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1f1f1f" class="fill-primary group-hover:fill-darkprim">
+                                    <path d="M395-276 191-480l204-204 20 20-170 170h524v28H245l170 170-20 20Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 my-4">
+                    <div class="bg-primary rounded-lg pl-4 pt-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <a href="#">
+                                <img src="assets/images/blog.png" alt="blog.png" class="w-full rounded-lg">
+                            </a>
+                            <h2 class="text-center font-bold">
+                                چگونه عینک آفتابی انتخاب کنیم؟
+                            </h2>
+                            <div class="flex text-darkprim">
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M602-315 466-451v-193h28v182l127 127-19 20ZM466-720v-80h28v80h-28Zm254 254v-28h80v28h-80ZM466-160v-80h28v80h-28ZM160-466v-28h80v28h-80Zm320.17 334q-72.17 0-135.73-27.39-63.56-27.39-110.57-74.35-47.02-46.96-74.44-110.43Q132-407.65 132-479.83q0-72.17 27.39-135.73 27.39-63.56 74.35-110.57 46.96-47.02 110.43-74.44Q407.65-828 479.83-828q72.17 0 135.73 27.39 63.56 27.39 110.57 74.35 47.02 46.96 74.44 110.43Q828-552.35 828-480.17q0 72.17-27.39 135.73-27.39 63.56-74.35 110.57-46.96 47.02-110.43 74.44Q552.35-132 480.17-132Zm-.17-28q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                                    </svg>
+
+                                    ۳ مرداد ۱۴۰۱
+                                </p>
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M480.24-364q56.76 0 96.26-39.74 39.5-39.73 39.5-96.5 0-56.76-39.74-96.26-39.73-39.5-96.5-39.5-56.76 0-96.26 39.74-39.5 39.73-39.5 96.5 0 56.76 39.74 96.26 39.73 39.5 96.5 39.5Zm-.24-28q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.14 140Q355-252 252-319.5 149-387 96-500q53-113 155.86-180.5 102.85-67.5 228-67.5Q605-748 708-680.5 811-613 864-500q-53 113-155.86 180.5-102.85 67.5-228 67.5ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                                    </svg>
+                                </p>
+                            </div>
+                            <a href="#"
+                                class="flex w-80/100 mx-auto mt-8 mb-2 rounded-lg text-primary bg-darkprim px-4 py-2 text-center justify-center hover:bg-primary hover:text-darkprim group hover:border hover:border-darkprim">
+                                مشاهده
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="#1f1f1f" class="fill-primary group-hover:fill-darkprim">
+                                    <path d="M395-276 191-480l204-204 20 20-170 170h524v28H245l170 170-20 20Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/4 px-4 my-4">
+                    <div class="bg-primary rounded-lg pl-4 pt-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <a href="#">
+                                <img src="assets/images/blog.png" alt="blog.png" class="w-full rounded-lg">
+                            </a>
+                            <h2 class="text-center font-bold">
+                                چگونه عینک آفتابی انتخاب کنیم؟
+                            </h2>
+                            <div class="flex text-darkprim">
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M602-315 466-451v-193h28v182l127 127-19 20ZM466-720v-80h28v80h-28Zm254 254v-28h80v28h-80ZM466-160v-80h28v80h-28ZM160-466v-28h80v28h-80Zm320.17 334q-72.17 0-135.73-27.39-63.56-27.39-110.57-74.35-47.02-46.96-74.44-110.43Q132-407.65 132-479.83q0-72.17 27.39-135.73 27.39-63.56 74.35-110.57 46.96-47.02 110.43-74.44Q407.65-828 479.83-828q72.17 0 135.73 27.39 63.56 27.39 110.57 74.35 47.02 46.96 74.44 110.43Q828-552.35 828-480.17q0 72.17-27.39 135.73-27.39 63.56-74.35 110.57-46.96 47.02-110.43 74.44Q552.35-132 480.17-132Zm-.17-28q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+                                    </svg>
+
+                                    ۳ مرداد ۱۴۰۱
+                                </p>
+                                <p class="flex text-darkprim">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" class="fill-darkprim">
+                                        <path
+                                            d="M480.24-364q56.76 0 96.26-39.74 39.5-39.73 39.5-96.5 0-56.76-39.74-96.26-39.73-39.5-96.5-39.5-56.76 0-96.26 39.74-39.5 39.73-39.5 96.5 0 56.76 39.74 96.26 39.73 39.5 96.5 39.5Zm-.24-28q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm.14 140Q355-252 252-319.5 149-387 96-500q53-113 155.86-180.5 102.85-67.5 228-67.5Q605-748 708-680.5 811-613 864-500q-53 113-155.86 180.5-102.85 67.5-228 67.5ZM480-500Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
+                                    </svg>
+                                </p>
                             </div>
                             <a href="#"
                                 class="flex w-80/100 mx-auto mt-8 mb-2 rounded-lg text-primary bg-darkprim px-4 py-2 text-center justify-center hover:bg-primary hover:text-darkprim group hover:border hover:border-darkprim">
@@ -702,7 +1949,7 @@
                     </div>
                 </div>
                 <a href="#">
-                مشاهده همه
+                    مشاهده همه
                 </a>
 
             </div>
@@ -719,24 +1966,106 @@
                 md:grid md:grid-cols-3  2xl:grid-cols-5 md:gap-6
                 grid grid-cols-1 gap-8 items-center
             ">
+                    <div class="footer-widget-area-1 col-span-1">
+                        <div class="footer-widget footer-widget-1">
+                            <ul class="wp-block-list">
+                                <li>تست</li>
 
 
 
+                                <li>درباره ما</li>
+
+
+
+                                <li>تماس با ما</li>
+
+
+
+                                <li>محصولات</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-widget-area-2 col-span-1">
+                        <div class="footer-widget footer-widget-2">
+                            <ul class="wp-block-list">
+                                <li>دبل تست</li>
+
+
+
+                                <li>درباره ما</li>
+
+
+
+                                <li>تماس با ما</li>
+
+
+
+                                <li>محصولات</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-widget-area-3 col-span-1">
+                        <div class="footer-widget footer-widget-3">
+                            <ul class="wp-block-list">
+                                <li>تریتست</li>
+
+
+
+                                <li>درباره ما</li>
+
+
+
+                                <li>تماس با ما</li>
+
+
+
+                                <li>محصولات</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-widget-area-4 col-span-1">
+                        <div class="footer-widget footer-widget-4">
+                            <ul class="wp-block-list">
+                                <li>فورت تست</li>
+
+
+
+                                <li>تماس با ما</li>
+
+
+
+                                <li>درباره ما</li>
+
+
+
+                                <li>محصولات</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-widget-area-5 col-span-1">
+                        <div class="footer-widget footer-widget-5">
+                            <figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="150"
+                                    height="74"
+                                    src="http://localhost/Writingsupplies/wp-content/uploads/2025/12/TAHRIR-02.png"
+                                    alt="" class="wp-image-17583"></figure>
+                        </div>
+                        <div class="footer-widget footer-widget-5"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8914865.604931977!2d48.917870149934906!3d34.224856375306295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef7ec2ec16b1df1%3A0x40b095d39e51face!2sIran!5e0!3m2!1sen!2snl!4v1765000642491!5m2!1sen!2snl"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </div>
                 </div>
 
 
-            </div>
-
-
-
-        </div>
-        <div class="site-info text-center mt-10 pt-6">
-
-            <div class="footer-widget-area-6 w-full mt-6 border-t border-gray-700 pt-6">
 
             </div>
-
-        </div>
+            <div class="site-info text-center mt-10 pt-6">
+                <div class="footer-widget-area-6 w-full mt-6 border-t border-gray-700 pt-6">
+                    <div class="footer-widget footer-widget-6">
+                        <p>کلیه حقوق متعلق به <a href="https://katibehnaji.com/">کتیبه ناجی </a>میباشد</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
